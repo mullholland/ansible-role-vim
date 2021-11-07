@@ -1,0 +1,21 @@
+---
+# Should vim be the default (global) editor?
+vim_default_editor: true
+
+# global vim configuration values
+# A small collection of the settings i use at the moment
+# feel free to test and change these
+# syntax on => adds syntax highlighting
+# set expandtab => insert space characters whenever the tab key is pressed
+# set shiftwidth=2 => change the number of space characters inserted for indentation
+# set softtabstop=2 => cause <Tab> and <BS> to insert and delete the correct number of spaces
+# set autoindent => autoindent essentially tells vim to apply the indentation of the current line to the next
+# colorscheme industry =>
+
+vim_config:
+  - "syntax on"
+  - "set expandtab"
+  - "set shiftwidth=2"
+  - "set softtabstop=2"
+  - "set autoindent"
+  - "colorscheme industry"
