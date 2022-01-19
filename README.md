@@ -22,7 +22,6 @@ vim_default_editor: true
 # set shiftwidth=2 => change the number of space characters inserted for indentation
 # set softtabstop=2 => cause <Tab> and <BS> to insert and delete the correct number of spaces
 # set autoindent => autoindent essentially tells vim to apply the indentation of the current line to the next
-# colorscheme industry =>
 
 vim_config:
   - "syntax on"
@@ -30,7 +29,6 @@ vim_config:
   - "set shiftwidth=2"
   - "set softtabstop=2"
   - "set autoindent"
-  - "colorscheme industry"
 ```
 
 
