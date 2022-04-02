@@ -22,6 +22,7 @@ linting:
   script:
     - "command=${COMMAND} /opt/molecule.sh"
 
+
 "default-previous":
   needs:
     - "linting"
