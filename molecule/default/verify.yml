@@ -6,7 +6,7 @@
 
   tasks:
     - name: SmokeTests
-      debug:
+      ansible.builtin.debug:
         msg:
           - "ansible_version => {{ansible_version}}"
           - "ansible_distribution => {{ ansible_distribution }}"
@@ -16,7 +16,7 @@
 
     # Repository
     - name: Test if Debian vimrc exists
-      lineinfile:
+      ansible.builtin.lineinfile:
         name: '/etc/vim/vimrc.local'
         line: 'syntax on'
         state: present
@@ -26,7 +26,7 @@
       when: ansible_os_family == "Debian"
 
     - name: verify vimrc filemode
-      file:
+      ansible.builtin.file:
         name: '/etc/vim/vimrc.local'
         owner: 'root'
         group: 'root'
@@ -36,7 +36,7 @@
       when: ansible_os_family == "Debian"
 
     - name: Test if RedHat vimrc exists
-      lineinfile:
+      ansible.builtin.lineinfile:
         name: '/etc/vimrc'
         line: 'syntax on'
         state: present
@@ -46,7 +46,7 @@
       when: ansible_os_family == "RedHat"
 
     - name: verify vimrc filemode
-      file:
+      ansible.builtin.file:
         name: '/etc/vimrc'
         owner: 'root'
         group: 'root'

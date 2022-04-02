@@ -4,7 +4,7 @@
 |------|------|
 |[![github](https://github.com/mullholland/ansible-role-vim/workflows/Ansible%20Molecule/badge.svg)](https://github.com/mullholland/ansible-role-vim/actions)|[![gitlab](https://gitlab.com/mullholland/ansible-role-vim/badges/master/pipeline.svg)](https://gitlab.com/mullholland/ansible-role-vim)|[![quality](https://img.shields.io/ansible/quality/unset)](https://galaxy.ansible.com/mullholland/vim)|
 
-Installs and configues vim
+Installs and configures vim.
 
 ## [Role Variables](#role-variables)
 
@@ -73,9 +73,8 @@ This role has been tested on these [container images](https://hub.docker.com/u/m
 
 The minimum version of Ansible required is 2.10, tests have been done to:
 
--   The previous version.
+-   The previous versions.
 -   The current version.
--   The development version.
 
 
 
