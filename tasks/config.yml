@@ -1,6 +1,6 @@
 ---
 - name: Create configuration directory for vim
-  file:
+  ansible.builtin.file:
     state: 'directory'
     dest: '/etc/vim'
     owner: 'root'
@@ -8,7 +8,7 @@
     mode: "0755"
 
 - name: Configure global vimrc options
-  template:
+  ansible.builtin.template:
     src: 'vimrc.j2'
     dest: '{{ vim_path_vimrc }}'
     owner: 'root'
