@@ -45,6 +45,21 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
     - role: "mullholland.vim"
 ```
 
+The machine needs to be prepared in CI this is done using `molecule/default/prepare.yml`:
+```yaml
+---
+- name: Prepare
+  hosts: all
+  become: true
+  gather_facts: true
+
+  tasks:
+    - name: Debian/Ubuntu | Install cron for Backupscript
+      ansible.builtin.apt:
+        update_cache: true
+      when: ansible_os_family == "Debian"
+```
+
 
 
 
