@@ -45,6 +45,21 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
     - role: "mullholland.vim"
 ```
 
+The machine needs to be prepared in CI this is done using `molecule/default/prepare.yml`:
+```yaml
+---
+- name: Prepare
+  hosts: all
+  become: true
+  gather_facts: true
+
+  tasks:
+    - name: Debian/Ubuntu | Install cron for Backupscript
+      ansible.builtin.apt:
+        update_cache: true
+      when: ansible_os_family == "Debian"
+```
+
 
 
 
@@ -59,8 +74,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/m
 -   [ubuntu1804](https://hub.docker.com/r/mullholland/docker-molecule-ubuntu1804)
 -   [ubuntu2004](https://hub.docker.com/r/mullholland/docker-molecule-ubuntu2004)
 -   [centos7](https://hub.docker.com/r/mullholland/docker-molecule-centos7)
--   [centos8](https://hub.docker.com/r/mullholland/docker-molecule-centos8)
--   [centos8-stream](https://hub.docker.com/r/mullholland/docker-molecule-centos8-stream)
+-   [centos-stream8](https://hub.docker.com/r/mullholland/docker-molecule-centos-stream8)
 -   [ubi8](https://hub.docker.com/r/mullholland/docker-molecule-ubi8)
 -   [fedora33](https://hub.docker.com/r/mullholland/docker-molecule-fedora33)
 -   [fedora34](https://hub.docker.com/r/mullholland/docker-molecule-fedora34)
@@ -73,6 +87,7 @@ The minimum version of Ansible required is 2.10, tests have been done to:
 
 -   The previous versions.
 -   The current version.
+-   The [devel](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-devel-from-github-with-pip) version.
 
 
 
