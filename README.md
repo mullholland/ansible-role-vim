@@ -54,7 +54,7 @@ The machine needs to be prepared in CI this is done using `molecule/default/prep
   gather_facts: true
 
   tasks:
-    - name: Debian/Ubuntu | Install cron for Backupscript
+    - name: Debian/Ubuntu | update apt cache
       ansible.builtin.apt:
         update_cache: true
       when: ansible_os_family == "Debian"
