@@ -1,7 +1,4 @@
 ---
-# Should vim be the default (global) editor?
-vim_default_editor: true
-
 # global vim configuration values
 # A small collection of the settings i use at the moment
 # feel free to test and change these

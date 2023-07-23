@@ -1,0 +1,8 @@
+---
+#
+# Ansible managed
+#
+repository:
+  description: Installs and configures vim.
+  homepage: https://mullholland.net
+  topics: development, system, ansible, molecule, tox, playbook
