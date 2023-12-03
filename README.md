@@ -4,7 +4,7 @@ Installs and configures vim.
 
 |GitHub|Downloads|Version|
 |------|---------|-------|
-|[![github](https://github.com/mullholland/ansible-role-vim/actions/workflows/molecule.yml/badge.svg)](https://github.com/mullholland/ansible-role-vim/actions/workflows/molecule.yml)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/mullholland/vim)|[![Version](https://img.shields.io/github/release/mullholland/ansible-role-vim.svg)](https://github.com/mullholland/ansible-role-vim/releases/)|
+|[![github](https://github.com/mullholland/ansible-role-vim/actions/workflows/molecule.yml/badge.svg)](https://github.com/mullholland/ansible-role-vim/actions/workflows/molecule.yml)|[![downloads](https://img.shields.io/ansible/role/d/mullholland/vim)](https://galaxy.ansible.com/mullholland/vim)|[![Version](https://img.shields.io/github/release/mullholland/ansible-role-vim.svg)](https://github.com/mullholland/ansible-role-vim/releases/)|
 ## [Example Playbook](#example-playbook)
 
 This example is taken from [`molecule/default/converge.yml`](https://github.com/mullholland/ansible-role-vim/blob/master/molecule/default/converge.yml) and is tested on each push, pull request and release.
