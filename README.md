@@ -15,7 +15,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   hosts: all
   gather_facts: true
   roles:
-    - role: "mullholland.vim"
+    - role: "{{ lookup('env', 'MOLECULE_PROJECT_DIRECTORY') }}"
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/mullholland/ansible-role-vim/blob/master/molecule/default/prepare.yml):
